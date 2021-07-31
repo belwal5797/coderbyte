@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Assessment ...</title>
+    <style>
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p{
+            text-align: center;
+        }
+        .res{
+            text-align: center;
+            font-size: large;
+        }
+        .advising{
+            text-align: center;
+            font-size: large;
+        }
+        .trust{
+            text-align: center;
+            font-size: large;
+        }
+        .support{
+            text-align: center;
+            font-size: large;
+        }
+        th{
+           width:150px;
+       }
+       .a{
+           border: 1px solid black;
+           width: 30px;
+           height: 25px;  
+           background-color: grey;
+       }
+       .b{
+           border: 1px solid black;
+           width: 30px;
+           height: 25px;  
+           background-color: grey;
+       }
+       .c{
+           border: 1px solid black;
+           width: 30px;
+           height: 25px;  
+           background-color: grey;
+       }
+       .d{
+           border: 1px solid black;
+           width: 30px;
+           height: 25px; 
+           background-color: grey;
+            
+       }
+       .e{
+           border: 1px solid black;
+           width: 30px;
+           height: 25px;  
+           background-color: grey;
+         }
+
+          .a:hover{
+            background-color: chocolate;
+            cursor:pointer;
+          }
+
+          .b:hover{
+              background-color: coral;
+              cursor:pointer;
+          }
+
+          .c:hover{
+              background-color:darkgoldenrod;
+              cursor:pointer;
+          }
+           
+          .d:hover{
+              background-color:limegreen;
+              cursor:pointer;
+          }
+         .e:hover{
+             background-color:darkgreen;
+             cursor:pointer;
+         }
+
+         #button{
+             margin-top: 5%;
+             margin-left: 50%;
+             width: 150px;
+             text-align: center;
+             color: white;
+             height: 35px;
+             font-size: larger;
+             cursor:pointer;
+         }
+
+
+
+
+
+       
+       </style>
+</head>
+<body>
+    <form>
+    <img src="logo-bajaj-capital.png" alt="BajajCapital"/>
+    <br>
+    <p>Please rate your satisfaction on the following attributes of our service.</p>
+    <br>
+    <div class="res">Responsiveness</div>
+    <br>
+    <table>
+        <tr>
+        <th>Extremely bad</th>
+        <th>Bad</th>
+        <th>Neutral</th>
+        <th>Good</th>
+        <th>Extremely good</th>
+    </tr>
+    <tr>
+        <td class="a"></td>
+        <td class="b"></td>
+        <td class="c"></td>
+        <td class="d"></td>
+        <td class="e"></td>
+    </tr>
+    </table>
+    <br>
+    <div class="advising">Competency in advising right solutions</div>
+    <br>
+    <table>
+        <tr>
+        <th>Extremely bad</th>
+        <th>Bad</th>
+        <th>Neutral</th>
+        <th>Good</th>
+        <th>Extremely good</th>
+    </tr>
+    <tr>
+        <td class="a"></td>
+        <td class="b"></td>
+        <td class="c"></td>
+        <td class="d"></td>
+        <td class="e"></td>
+    </tr>
+    </table>
+    <br>
+    <div class="trust">Trustworthiness</div>
+    <br>
+    <table>
+        <tr>
+        <th>Extremely bad</th>
+        <th>Bad</th>
+        <th>Neutral</th>
+        <th>Good</th>
+        <th>Extremely good</th>
+    </tr>
+    <tr>
+        <td class="a"></td>
+        <td class="b"></td>
+        <td class="c"></td>
+        <td class="d"></td>
+        <td class="e"></td>
+    </tr>
+    </table>
+    <br>
+    <div>
+    <div class="support">Customer service and support</div>
+    <br>
+    <table>
+        <tr>
+        <th>Extremely bad</th>
+        <th>Bad</th>
+        <th>Neutral</th>
+        <th>Good</th>
+        <th>Extremely good</th>
+    </tr>
+    <tr>
+        <td class="a"></td>
+        <td class="b"></td>
+        <td class="c"></td>
+        <td class="d"></td>
+        <td class="e"></td>
+    </tr>
+    </table>
+    <br>
+    <input type="submit" value="Next" id="button">
+    <br>
+  
+
+</form>
+<script>
+        var store=document.querySelector('.a');
+         store.addEventListener("mouseover",()=>{
+             console.log('Extremely bad');
+         })
+
+         var store1=document.querySelector('.b');
+         store1.addEventListener("mouseover",()=>{
+             console.log('Bad');
+         })
+
+         var store2=document.querySelector('.c');
+         store2.addEventListener("mouseover",()=>{
+             console.log('Neutral');
+         })
+
+         var store3=document.querySelector('.d');
+         store3.addEventListener("mouseover",()=>{
+             console.log('Good');
+         })
+
+         var store4=document.querySelector('.e');
+         store4.addEventListener("mouseover",()=>{
+             document.style.backgroundColor='red';
+             console.log('Extremely good');
+            
+         })
+
+</script>
+</body>
+</html>
